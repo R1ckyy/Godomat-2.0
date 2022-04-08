@@ -15,6 +15,7 @@ app.use(express.static('game'));
 const urlencodedParser = bodyParser.urlencoded({extended: false});
 
 app.post('/save', urlencodedParser, (req, res) => {
+    console.log(req.body)
     let player = req.body.player;
     let smallwins = req.body.smallwins;
     let bigwins = req.body.bigwins;
