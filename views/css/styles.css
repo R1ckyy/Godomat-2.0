@@ -1,3 +1,18 @@
+body{
+    background-color: black;
+}
 h1 {
-    color: red; 
+    color: cyan;
+    text-align: center; 
+    margin-top: 20%
+}
+table{
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    margin: auto auto;
+}
+td{
+    border: 1px solid white;
+    color:white
 }

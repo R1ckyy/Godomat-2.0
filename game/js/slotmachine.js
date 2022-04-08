@@ -1,12 +1,11 @@
 let rolling = 0;
 var jwin = 0;
 var bigwinflash;
-let gcoins = 1;
+let gcoins = 30;
 let pokusy = 0;
 let mvyhry = 0;
 let vvyhry = 0;
 let sance = 6.2;
-//VAROVÁNÍ !! SPAGHETTI CODE !! VAROVÁNÍ
 
 //-------------AUDIO-----------
 var presss = new Audio();
@@ -197,11 +196,8 @@ function reset() {
         tlacitkotext.style.color = '#ff0000';
         form.style.display = 'block';
         smallwins.value = mvyhry;
-        smallwins.disabled = true;
         bigwins.value = vvyhry;
-        bigwins.disabled = true;
         tries.value = pokusy;
-        tries.disabled = true;
     }
 }
 function resetj() {

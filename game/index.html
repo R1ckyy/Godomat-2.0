@@ -51,29 +51,28 @@
         </div>
         <div class="container" id="form">
           <form action="/save" method="post">
-              <div class="form-group row">
+              <div class="form-group">
+                <div class="row">
                   <label for="player" class="offset-sm-3 col-sm-2 col-form-label text-white">Jméno Godomaniaka:</label>
                   <div class="col-sm-4">
-                      <input type="text" class="form-control" name="player" id="player" 
-                      placeholder="Zadej jméno hráče">
+                    <input type="text" class="form-control" name="player" id="player" placeholder="Zadej jméno hráče">
                   </div>
-              
-                <label for="smallwins" class="offset-sm-3 col-sm-1 col-form-label text-white">Malé V.:</label>
+                </div>
+                <div class="row">
+                  <label for="tries" class="offset-sm-3 col-sm-1 col-form-label text-white">Pokusy:</label>
                   <div class="col-sm-1">
-                      <input type="number" class="form-control" name="smallwins" id="smallwins" 
-                      value="0" min="0" max="500">
+                    <input type="number" class="form-control" name="tries" id="tries" value="0" min="0">
+                  </div>
+                  <label for="smallwins" class="col-sm-1 col-form-label text-white">Malé V.:</label>
+                  <div class="col-sm-1">
+                    <input type="number" class="form-control" name="smallwins" id="smallwins" value="0" min="0">
                   </div>
                   <label for="bigwins" class="col-sm-1 col-form-label text-white">Velké V.:</label>
                   <div class="col-sm-1">
-                      <input type="number" class="form-control" name="bigwins" id="bigwins" 
-                      value="0" min="0" max="500">
-                  </div>
-                  <label for="tries" class="col-sm-1 col-form-label text-white">Pokusů:</label>
-                  <div class="col-sm-1">
-                      <input type="number" class="form-control" name="tries" id="tries" 
-                      value="0" min="0" max="5000">
+                    <input type="number" class="form-control" name="bigwins" id="bigwins" value="0" min="0">
                   </div>
                 </div>
+              </div>
               <div class="form-group row">
                   <div class="offset-sm-3 col-sm-6">
                       <button type="submit" class="btn btn-block alarm">Send to China</button>

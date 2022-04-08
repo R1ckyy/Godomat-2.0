@@ -15,7 +15,6 @@ app.use(express.static('game'));
 const urlencodedParser = bodyParser.urlencoded({extended: false});
 
 app.post('/save', urlencodedParser, (req, res) => {
-    console.log(req.body)
     let player = req.body.player;
     let smallwins = req.body.smallwins;
     let bigwins = req.body.bigwins;
@@ -37,8 +36,7 @@ app.post('/save', urlencodedParser, (req, res) => {
 app.get('/results', (req, res) => {
     csv().fromFile('./data/result.csv')
     .then(data => {
-        console.log(data);
-        res.render('results.pug', {'players':data});
+        res.render('results.pug', {'players':data, 'nadpis':'Výsledky godomatu'});
     })
     .catch(err => {
         console.log(err);
